@@ -987,6 +987,8 @@ MonoBehaviour:
     redChoice: Play Color Switch For 5 Points
   - blueChoice: Get Walking Sounds
     redChoice: Get Walking Particles
+  - blueChoice: Play Flappy Bird For 10 Points
+    redChoice: Play Pong For 10 Points
 --- !u!114 &1716909878
 MonoBehaviour:
   m_ObjectHideFlags: 0

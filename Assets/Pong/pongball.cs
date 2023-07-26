@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pongball : MonoBehaviour
 {
     public Vector2 direction;
     public float speed;
+    [SerializeField] private ScoreManager scoreManager;
     // Start is called before the first frame update
     void Start()
     {
-        //Invoke("wybij", 2);
         direction = Vector2.one.normalized;
     }
 
@@ -18,10 +19,6 @@ public class pongball : MonoBehaviour
     void Update()
     {
         
-    }
-    void wybij()
-    {
-        //GetComponent<Rigidbody2D>().AddForce((Vector2)transform.right + new Vector2(150, 0), ForceMode2D.Force);
     }
     private void FixedUpdate()
     {
@@ -32,10 +29,16 @@ public class pongball : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             direction.y = -direction.y;
+            
         }
         else if (collision.gameObject.CompareTag("Paddle"))
         {
             direction.x = -direction.x;
+            scoreManager.score++;
+        }
+        else if (collision.gameObject.CompareTag("Respawn"))
+        {
+            SceneManager.LoadScene("PongScene");
         }
     }
 }

@@ -23,6 +23,7 @@ public class ChoiceMethods : MonoBehaviour {
         choiceMethods.Add(ChoiceOne);
         choiceMethods.Add(ChoiceTwo);
         choiceMethods.Add(ChoiceThree);
+        choiceMethods.Add(ChoiceFour);
     }
 
     private void ChoiceOne()
@@ -51,5 +52,10 @@ public class ChoiceMethods : MonoBehaviour {
     {
         if (colorChosen == "Blue") pp.sound = true;
         else pp.sound = false;
+    }
+    private void ChoiceFour()
+    {
+        if (colorChosen == "Blue") SceneManager.LoadScene("FlappyBirdScene");
+        else SceneManager.LoadScene("PongScene");
     }
 }

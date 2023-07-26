@@ -11,7 +11,8 @@ public class ChoiceMethods : MonoBehaviour {
 
     // Don't change this in the Inspector, it is just being changed and accessed by scripts
     public string colorChosen;
-    
+
+
     public List<Action> choiceMethods = new();
 
     [Header("Choices")]
@@ -24,6 +25,7 @@ public class ChoiceMethods : MonoBehaviour {
         choiceMethods.Add(ChoiceTwo);
         choiceMethods.Add(ChoiceThree);
         choiceMethods.Add(ChoiceFour);
+        Debug.Log(choiceMethods.Count);
     }
 
     private void ChoiceOne()
@@ -50,12 +52,20 @@ public class ChoiceMethods : MonoBehaviour {
 
     private void ChoiceThree()
     {
-        if (colorChosen == "Blue") pp.sound = true;
-        else pp.sound = false;
+        if (colorChosen == "Blue")
+            pp.sound = true;
+        else
+            pp.sound = false; pp.particles = true;
+
+        myChoiceSelector.AssignChoices();
+
     }
     private void ChoiceFour()
     {
-        if (colorChosen == "Blue") SceneManager.LoadScene("FlappyBirdScene");
-        else SceneManager.LoadScene("PongScene");
+        if (colorChosen == "Red")
+            SceneManager.LoadScene("FlappyBirdScene");
+        else
+            SceneManager.LoadScene("PongScene");
+
     }
 }

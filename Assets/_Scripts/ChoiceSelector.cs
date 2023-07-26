@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ChoiceSelector : MonoBehaviour {
 
-    [SerializeField] private Transform playerTransform;
+    [SerializeField] private GameObject player;
 
     [SerializeField] private TextMeshProUGUI blueChoiceText;
     [SerializeField] private TextMeshProUGUI redChoiceText;
@@ -31,15 +31,15 @@ public class ChoiceSelector : MonoBehaviour {
 
     public void AssignChoices()
     {
-        ResetPosition();
         choiceIndex++;
         blueChoiceText.text = choiceTexts[choiceIndex].blueChoice;
         redChoiceText.text = choiceTexts[choiceIndex].redChoice;
+        //ResetPosition();
     }
 
     private void ResetPosition()
     {
-        playerTransform.position = Vector3.zero;
+        player.transform.position = Vector3.zero;
     }
 }
 

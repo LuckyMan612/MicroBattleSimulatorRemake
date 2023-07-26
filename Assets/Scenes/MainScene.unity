@@ -275,6 +275,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &631387975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7377483194108018664, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
+  m_PrefabInstance: {fileID: 2125745362032587726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &916220104
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,11 +555,6 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7550446922680918579, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
   m_PrefabInstance: {fileID: 2125745362032587726}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1264866636 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8483227265318607739, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
-  m_PrefabInstance: {fileID: 2125745362032587726}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1275926234
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6507558129079018007, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
   m_PrefabInstance: {fileID: 2125745362032587726}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 631387975}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1e8deecbe17a564bb93f368aacb059c, type: 3}
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d53a866b9925d4fb2a3dc9047fb2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1264866636}
+  player: {fileID: 631387975}
   blueChoiceText: {fileID: 1043394491}
   redChoiceText: {fileID: 916220106}
   myChoiceMethods: {fileID: 1716909878}
@@ -985,10 +985,12 @@ MonoBehaviour:
     redChoice: Be Magenta
   - blueChoice: Play Flappy Bird For 10 Points
     redChoice: Play Color Switch For 5 Points
-  - blueChoice: Get Walking Sounds
-    redChoice: Get Walking Particles
-  - blueChoice: Play Flappy Bird For 10 Points
-    redChoice: Play Pong For 10 Points
+  - blueChoice: Play Pong For 10 Points
+    redChoice: Play Flappy Bird For 10 Points
+  - blueChoice: Get Walking Sounds [desc]
+    redChoice: Get Walking Particles [desc]
+  - blueChoice: Get Walking Sounds [desc]
+    redChoice: Get Walking Particles [desc]
 --- !u!114 &1716909878
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,7 +6,8 @@
 | | | \___  | | | | | |.___/ / | | || || (__|   < 
 |_| |_|   |_/_| |_| |_|\____/|_| |_\___/\___|_|\_\
 
-- n4m3n1ck was here                                     
+- n4m3n1ck was here     
+- Lucky was here too
 */
 using System;
 using System.Collections;

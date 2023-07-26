@@ -340,6 +340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: 0
   _particles: {fileID: 8596584018517064475}
+  sound: 0
+  _sound: {fileID: 145166906384062726}
   position: {x: 0, y: 0, z: 0}
 --- !u!1 &8596584018517064475
 GameObject:

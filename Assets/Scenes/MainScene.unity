@@ -310,7 +310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230.9, y: -31}
+  m_AnchoredPosition: {x: 191, y: -31}
   m_SizeDelta: {x: 200, y: 263.2552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916220106
@@ -445,7 +445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230.9, y: -31}
+  m_AnchoredPosition: {x: -190, y: -31}
   m_SizeDelta: {x: 200, y: 263.2552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043394491
@@ -814,6 +814,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452569792}
   m_CullTransparentMesh: 1
+--- !u!114 &1508729090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6507558129079018007, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
+  m_PrefabInstance: {fileID: 2125745362032587726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e8deecbe17a564bb93f368aacb059c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672650767
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,8 +985,8 @@ MonoBehaviour:
     redChoice: Be Magenta
   - blueChoice: Play Flappy Bird For 10 Points
     redChoice: Play Color Switch For 5 Points
-  - blueChoice: Get Walking Sounds (Just an idea)
-    redChoice: Get Walking Particles (Go nuts with this game)
+  - blueChoice: Get Walking Sounds
+    redChoice: Get Walking Particles
 --- !u!114 &1716909878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +1002,7 @@ MonoBehaviour:
   myChoiceSelector: {fileID: 1716909877}
   playerSprite: {fileID: 1264866635}
   colorChosen: 
+  pp: {fileID: 1508729090}
 --- !u!1 &2005975939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,6 +1134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 145166906384062726, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377483194108018664, guid: 009c1ea3869e4de49afe7416abcb5aeb, type: 3}
       propertyPath: m_Name
       value: Player

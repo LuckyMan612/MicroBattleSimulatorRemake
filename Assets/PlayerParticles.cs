@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class PlayerParticles : MonoBehaviour
 {
+    [Header("Particles")]
     public bool particles;
     public GameObject _particles;
-    public Vector3 position;
+    [Header("Sounds")]
+    public bool sound;
+    public GameObject _sound;
+    [Header("Misc")]
+    public bool isMoving;
     // Start is called before the first frame update
     void Start()
     {
-        position = transform.position;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (particles && position == transform.position)
+        if (sound && isMoving)
+        {
+            _sound.SetActive(true);
+        } else _sound.SetActive(false);
+        if (particles && isMoving)
         {
             _particles.SetActive(true);
-        }
+        } else _particles.SetActive(false);
+        
+
     }
 }

@@ -14,6 +14,10 @@ public class ChoiceMethods : MonoBehaviour {
     
     public List<Action> choiceMethods = new();
 
+    [Header("Choices")]
+    [SerializeField] private PlayerParticles pp; // and sounds
+
+
     private void Start()
     {
         choiceMethods.Add(ChoiceOne);
@@ -45,6 +49,7 @@ public class ChoiceMethods : MonoBehaviour {
 
     private void ChoiceThree()
     {
-
+        if (colorChosen == "Blue") pp.sound = true;
+        else pp.sound = false;
     }
 }

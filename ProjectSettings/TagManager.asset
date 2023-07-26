@@ -10,6 +10,8 @@ TagManager:
   - Pink
   - Purple
   - Yellow
+  - Paddle
+  - Wall
   layers:
   - Default
   - TransparentFX
